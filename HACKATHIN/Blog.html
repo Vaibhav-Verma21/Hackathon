@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RightsCompass</title>
+  <style>
+    /* Add some style to the page */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    /* Create a sticky navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    /* Create a hero section with a parallax effect */
+    .hero {
+      height: 500px;
+      background-image: url("fist.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: 60px;
+      text-shadow: 2px 2px 4px black;
+    }
+    .quote{
+      color: hsl(0, 0%, 100%);
+    }
+
+    /* main */
+    .main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    /* cards */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 10px;
+    }
+
+    .card-content h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .card-content a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card-content a:hover {
+      color: #555;
+    }
+
+    /* footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /*  media queries */
+    @media screen and (max-width: 768px) {
+      .main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Act & Rules</a>
+    <a href="#">Laws</a>
+    <a href="#">Complaints</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  <!-- Create a hero section with a title -->
+  <div class="hero">
+    <h1>Know Your Rights</h1>
+    <br>
+    <h2 class="quote">“The rights of every man are diminished when the rights of one man are threatened.” – John F. Kennedy</h2>
+  </div>
+
+  <!-- main section -->
+  <div class="main">
+    <p>
+        <!-- content yaha daalo -->
+    </p>
+  </div>
+
+  <!--  footer section -->
+  <div class="footer">
+    <p>© 2023 RightsCompass. All rights reserved.</p>
+  </div>
+</body>
+<body>
+  <!--  ScrollReveal.js link -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Add your custom script -->
+  <script>
+    // Initialize ScrollReveal
+    const sr = ScrollReveal();
+
+    // Select the cards
+    const cards = document.querySelectorAll(".card");
+
+    // Loop through the cards
+    for (let card of cards) {
+      // Add the animation classes
+      card.classList.add("animate__animated", "animate__fadeIn");
+
+      // Reveal the card on scroll with some options
+      sr.reveal(card, {
+        origin: "bottom", // Animation origin
+        distance: "50px", // Animation distance
+        duration: 1000, // Animation duration in milliseconds
+        delay: 200, // Animation delay in milliseconds
+        reset: true // Reset animation on scroll back
+      });
+    }
+  </script>
+</body>
+
+</html>
