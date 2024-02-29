@@ -2,10 +2,7 @@
 Table of Contents
 Introduction
 Features
-Installation
-Usage
-Contributing
-License
+
 Introduction
 The Human Rights and Authority Connection Hub aims to empower users by providing access to critical information related to human rights, legal resources, and support networks. Whether you’re an advocate, a victim, or someone seeking assistance, this platform serves as a bridge between people and the authorities.
 
